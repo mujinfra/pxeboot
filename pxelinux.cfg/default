@@ -1,0 +1,15 @@
+default harddisk
+
+# hard disk
+label harddisk
+  localboot -2
+
+# install
+label install
+  kernel linux
+  append initrd=initrd showopts install=http://10.16.29.201/opensuse423 autoyast=http://10.16.29.201/autoinst.xml
+
+display message
+implicit 0
+prompt 1
+
